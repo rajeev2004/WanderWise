@@ -13,7 +13,7 @@ function App(){
         <Router>
             <div>
                 <Routes>
-                    <Route path="/" element={<Register />}/>
+                    <Route exact path="/" element={<Register />}/>
                     <Route path="/login" element={<Login />}/>
                     <Route path="/dashboard" element={<Dashboard />}/>
                     <Route path="/viewPackage" element={<ViewPackage />}/>
