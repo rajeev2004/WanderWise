@@ -1,0 +1,12 @@
+.editDiv{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.editDiv label{
+    width: 80px;
+}
+.editDiv input{
+    width: 250px;
+}

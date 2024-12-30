@@ -1,0 +1,19 @@
+.labelAndDate{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.labelAndDate label{
+    width: 80px;
+}
+.labelAndDate input{
+    width: 250px;
+}
+.booking-form{
+    text-align: center;
+}
+strong{
+    font-size: 20px;
+}

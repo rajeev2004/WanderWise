@@ -1,0 +1,8 @@
+.booked-packages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.booked-packages h2{
+    text-align: center;
+}

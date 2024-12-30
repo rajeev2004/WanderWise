@@ -1,0 +1,73 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    animation: fadeIn 0.8s ease-in-out;
+}
+.register-btn,.login-navigate{
+    background-color: #0056D2;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.register-btn:hover{
+    background-color: #004bb5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.login-navigate:hover{
+    background-color: #004bb5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+input{
+    padding: 12px;
+    font-size: 16px;
+    border: 1px blue solid;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+input:focus{
+    border: 2px blue solid;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 86, 210, 0.5);
+}
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    animation: shake 0.5s ease-in-out;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes shake{
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
