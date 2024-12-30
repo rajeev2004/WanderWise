@@ -10,7 +10,7 @@ import Invoice from './components/Invoice';
 import ViewPackage from './components/ViewPackage';
 function App(){
     return (
-        <Router>
+        <Router basename="/WanderWise">
             <div>
                 <Routes>
                     <Route exact path="/" element={<Register />}/>
