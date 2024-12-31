@@ -8,7 +8,6 @@ function EditPackage(){
     const location=useLocation();
     const id=location.state.id;
     const[details,setDetails]=useState({
-        name:"",
         place:"",
         image_url:"",
         people:"",
@@ -48,15 +47,6 @@ function EditPackage(){
             <div className="info-container">
                 <h2>Edit package</h2>
                 <form>
-                    <div className="editDiv">
-                        <label>
-                            Name
-                        </label>
-                            <input type="text"
-                            name="name"
-                            value={details.name || ''}
-                            onChange={handleChange}/>
-                    </div>
                     <div className="editDiv">
                         <label>
                             Image
