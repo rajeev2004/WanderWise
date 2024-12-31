@@ -49,7 +49,7 @@ function EditPackage(){
                 <form>
                     <div className="editDiv">
                         <label>
-                            Image
+                            Image:
                         </label>
                             <input type="text"
                             name="image_url"
@@ -58,7 +58,7 @@ function EditPackage(){
                     </div>
                     <div className="editDiv">
                         <label>
-                            No. of people
+                            Max No. of people:
                         </label>
                             <input type="number"
                             name="people"
@@ -67,7 +67,7 @@ function EditPackage(){
                     </div>
                     <div className="editDiv">
                         <label>
-                            Destination
+                            Destination:
                         </label>
                             <input type="text"
                             name="place"
@@ -76,7 +76,7 @@ function EditPackage(){
                     </div>
                     <div className="editDiv">
                         <label>
-                            Preferred Month
+                            Preferred Month:
                         </label>
                             <input type="text"
                             name="month"
@@ -85,7 +85,7 @@ function EditPackage(){
                     </div>
                     <div className="editDiv">
                         <label>
-                            Amount
+                            Amount for 1 person:
                         </label>
                             <input type="number"
                             name="amount"
