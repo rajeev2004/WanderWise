@@ -16,7 +16,6 @@ function View(props){
             <div className="packageview-container">
                 <div className="nameAndDest">
                     <p>Destination: {props.place}</p>
-                    <p>Package: {props.name}</p>
                 </div>
                 <motion.img src={props.image} alt="destination image" 
                 initial={{opacity:1,scale:0.8}}
