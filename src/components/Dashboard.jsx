@@ -150,7 +150,6 @@ function Dashboard(){
                                     <View 
                                     id={packageInfo.id}
                                     place={packageInfo.place}
-                                    name={packageInfo.name}
                                     image={packageInfo.image_url}
                                     view={viewPackage}
                                     book={bookPackage}/>
@@ -164,7 +163,6 @@ function Dashboard(){
                                     <View 
                                     id={packageInfo.id}
                                     place={packageInfo.place}
-                                    name={packageInfo.name}
                                     image={packageInfo.image_url}
                                     view={viewPackage}
                                     book={bookPackage}
