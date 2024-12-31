@@ -25,3 +25,8 @@ select{
     width: 280px;
     margin: 0px;
 }
+select:focus{
+    border: 2px blue solid;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 86, 210, 0.5);
+}
