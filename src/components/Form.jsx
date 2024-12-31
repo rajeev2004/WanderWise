@@ -48,10 +48,10 @@ function Form(){
     }
     async function handleTripType(e){
         setTripType(e.target.value);
-        if(tripType==='honeymoon'){
+        if(e.target.value==='honeymoon'){
             setPeople(2);
             setAmount(packageInformation.amount*2);
-        }else if(tripType==='solo Trip'){
+        }else if(e.target.value==='solo Trip'){
             setPeople(1);
             setAmount(packageInformation.amount);
         }else{
@@ -95,12 +95,12 @@ function Form(){
                         required/>
                     </div>
                     <div className='labelAndDate'>
-                        <label htmlFor="Email">Trip Type:</label>
+                        <label htmlFor="Trip Type">Trip Type:</label>
                         <select className='select-trip-type'
                             value={tripType}
                             onChange={handleTripType}
                             required >
-                            <option value='' disabled>Select Trip Type And No. of People</option>
+                            <option value='' disabled>Trip Type And No. of People</option>
                             <option value='family Trip'>Family Trip</option>
                             <option value='solo Trip'>Solo Trip</option>
                             <option value='honeymoon'>Honeymoon</option>
