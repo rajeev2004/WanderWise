@@ -31,11 +31,17 @@ WanderWise is a comprehensive travel agency application that facilitates smooth 
    ```bash
    git clone https://github.com/your-repo/wanderwise.git
    cd wanderwise
-2. Install dependencies: npm install
+2. Install dependencies:
+    ```bash
+    npm install
 3. Configure the backend URL in the frontend code (e.g., the backend constant in the Form.jsx file).
-4. Start the development server: npm start
-5. Run the backend server (ensure the database is set up): node server.js
-6. Access the application at http://localhost:3000
+4. Start the development server:
+    ```bash
+    npm start
+5. Run the backend server (ensure the database is set up):
+    ```bash
+    node server.js
+6. Access the application at http://localhost:3000.
 
 ## Demo
 
