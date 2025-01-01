@@ -43,8 +43,8 @@ function Bookedpackages(){
                         <p>NAME: {packages.name}</p>
                         <img src={packages.image_url}/>
                         <p>DESTINATION: {packages.place}</p>
-                        <p>START DATE: {packages.start_date}</p>
-                        <p>END DATE: {packages.end_date}</p>
+                        <p>START DATE: {new Date(packages.start_date).toLocaleDateString()}</p>
+                        <p>END DATE: {new Date(packages.end_date).toLocaleDateString()}</p>
                         <p>PEOPLE: {packages.people}</p>
                         <p>AMOUNT: {packages.amount}</p>
                         <button type="button" onClick={()=>deleteBooking(packages.package_id,packages.start_date)}>Cancel Booking</button>
