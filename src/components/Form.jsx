@@ -24,15 +24,14 @@ function Form(){
         e.preventDefault();
         try{
             const user_id=localStorage.getItem('id');
-            const result=await axios.post(`${backend}/api/users/booking`,[user_id,location.state.id,email,startDate,EndDate,people,packageInformation.place,packageInformation.name,packageInformation.image_url,amount]);
-            console.log(result.data);
+            const result=await axios.post(`${backend}/api/users/booking`,[user_id,location.state.id,email,startDate,EndDate,people,packageInformation.place,tripType,packageInformation.image_url,amount]);
             navigate('/invoice',{
                 state:{
                     booking_id:result.data[0].id,
                     user_id:user_id,
                     package_id:location.state.id,
                     place:packageInformation.place,
-                    name:packageInformation.name,
+                    name:tripType,
                     image_url:packageInformation.image_url,
                     amount:amount,
                     email,
@@ -59,8 +58,13 @@ function Form(){
         }
     }
     async function setFamilyTripPeople(e){
-        setPeople(e.target.value);
-        setAmount(packageInformation.amount*e.target.value);
+        const number=Number(e.target.value);
+        if(number>packageInformation.people){
+            alert(`maximum of ${packageInformation.people} people are allowed`);
+        }else{
+            setPeople(e.target.value);
+            setAmount(packageInformation.amount*e.target.value);
+        }
     }
     return (
         <div className='container'>
