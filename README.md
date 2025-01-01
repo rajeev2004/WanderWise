@@ -25,6 +25,10 @@ WanderWise is a comprehensive travel agency application that facilitates smooth 
 - **Styling**: CSS for styling the application.
 - **Libraries**: Axios for API communication, React Router for navigation.
 
+## Link
+
+- **Backend Repository**: https://github.com/rajeev2004/travel-agency-backend
+
 ## Setup Instructions
 
 1. Clone the repository:
