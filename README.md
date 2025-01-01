@@ -41,4 +41,4 @@ WanderWise is a comprehensive travel agency application that facilitates smooth 
 
 You can check out the live website [here](https://rajeev2004.github.io/WanderWise/).
 
-![Portfolio Screenshot](https://github.com/user-attachments/assets/f60c0ccb-fa81-4624-9799-ff3ae7adc87c)
+![WanderWise Screenshot](https://github.com/rajeev2004/WanderWise/blob/main/src/assets/Screenshot%202025-01-01%20194816.png?raw=true)
