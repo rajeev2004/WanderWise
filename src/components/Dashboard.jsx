@@ -4,12 +4,14 @@ import axios from "axios";
 import View from './View';
 import './Dashboard.css';
 function Dashboard(){
-    const backend = 'https://travel-agency-backend-atxk.onrender.com';
+    const backend='https://travel-agency-backend-atxk.onrender.com';
     const[Packages,setPackage]=useState([]);
     const[filteredPackages,setFilteredPackages]=useState([]);
     const[bookedpackages,setBookedpackages]=useState([]);
     const[role,setRole]=useState("");
     const[searchterm,setSearchterm]=useState("");
+    const[question,setQuestion]=useState([]);
+    const[answer,setAnswer]=useState([]);
     const navigate=useNavigate();
     useEffect(()=>{
         const Role=localStorage.getItem('role');
@@ -130,6 +132,22 @@ function Dashboard(){
             }
         }
     }
+    async function helpAndSupport(){
+        try{
+            console.log("Role:",role);
+            const userId=localStorage.getItem('id');
+            console.log("User ID for query:",userId);
+            navigate('/queries',{
+                state:{
+                    role:role,
+                    userId:userId,
+                }
+            })
+            
+        }catch(err){
+            console.error(err.message);
+        }
+    }
     return (
         <div className="dashboard-container">
             <header><p>Book your perfect vacation with us.</p></header>
@@ -138,6 +156,7 @@ function Dashboard(){
                 placeholder="Destination"
                 value={searchterm}
                 onChange={handleSearch}/>
+                <button className="help-btn" onClick={helpAndSupport}>Help & Support</button>
                 <button className="logout-btn" onClick={logout}>Logout</button>
                 <button className="showPackage-btn" onClick={showBookedPackages}>Show Booked Packages</button>
             </div>
