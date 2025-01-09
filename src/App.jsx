@@ -9,6 +9,7 @@ import Form from './components/Form';
 import Invoice from './components/Invoice';
 import ViewPackage from './components/ViewPackage';
 import Notfound from './components/Notfound';
+import Queries from './components/Queries';
 function App(){
     return (
         <Router basename="/WanderWise">
@@ -22,6 +23,7 @@ function App(){
                     <Route path="/editPackage" element={<EditPackage />}/>
                     <Route path="/bookedpackages" element={<Bookedpackages />}/>
                     <Route path="/invoice" element={<Invoice />}/>
+                    <Route path="/queries" element={<Queries />}/>
                     <Route path="*" element={<Notfound />}/>
                 </Routes>
             </div>
