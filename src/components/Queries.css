@@ -1,0 +1,12 @@
+.question-inner-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.admin-answer-input{
+    display: flex;
+    gap: 20px;
+}
+.home{
+    margin-top: 25px;
+}
