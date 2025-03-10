@@ -29,23 +29,50 @@ WanderWise is a comprehensive travel agency application that facilitates smooth 
 
 - **Backend Repository**: https://github.com/rajeev2004/travel-agency-backend
 
-## Setup Instructions
+## **Setup Instructions**
 
+### **Backend Setup**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/wanderwise.git
-   cd wanderwise
+   git clone https://github.com/rajeev2004/travel-agency-backend.git
+   cd travel-agency-backend
+
+2. Install dependencies:
+   ```bash
+   npm install
+
+3. Create a .env file and add the following environment variables: 
+    ```bash
+    PGHOST=pg_host
+    PGPORT=pg_port
+    PGUSER=pg_user
+    PGPASSWORD=pg_password
+    PGDATABASE=pg_database
+    JWT_SECRET=your_secret_key
+
+4. Start the backend server (ensure the database is set up):
+    ```bash
+    node server.js
+
+### **Frontend Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rajeev2004/WanderWise.git
+   cd WanderWise
+
 2. Install dependencies:
     ```bash
     npm install
-3. Configure the backend URL in the frontend code (e.g., the backend constant in the Form.jsx file).
-4. Start the development server:
+
+3. Configure the backend URL in the frontend code (e.g., the backend constant in the Dashboard.jsx file).
     ```bash
-    npm start
-5. Run the backend server (ensure the database is set up):
+    backend=http://localhost:5000
+
+4. Start the frontend development server:
     ```bash
-    node server.js
-6. Access the application at http://localhost:3000.
+    npm run dev
+
+5. Access the application at http://localhost:5173
 
 ## Demo
 
